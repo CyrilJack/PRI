@@ -1,0 +1,33 @@
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_3 -> C_12 -> C_16 -> C_5 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_14 -> C_13 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2312
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_5 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_14 -> C_13 -> C_3 -> C_12 -> C_16 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2298
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_5 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_14 -> C_13 -> C_16 -> C_3 -> C_12 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2194
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_16 -> C_13 -> C_14 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_5 -> C_8 -> C_11 -> C_15 -> C_3 -> C_12 -> C_0 
+Total distance = 2187
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_16 -> C_13 -> C_14 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_5 -> C_3 -> C_12 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2171
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_13 -> C_14 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_5 -> C_16 -> C_3 -> C_12 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2146
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_16 -> C_13 -> C_14 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_5 -> C_12 -> C_3 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2120
+Solution trouvée:
+C_0 -> C_6 -> C_16 -> C_13 -> C_14 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_5 -> C_7 -> C_12 -> C_3 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2103
+Solution trouvée:
+C_0 -> C_15 -> C_11 -> C_8 -> C_3 -> C_12 -> C_16 -> C_13 -> C_14 -> C_9 -> C_1 -> C_4 -> C_10 -> C_2 -> C_5 -> C_7 -> C_6 -> C_0 
+Total distance = 2090
+Solution trouvée:
+C_0 -> C_6 -> C_7 -> C_5 -> C_16 -> C_13 -> C_14 -> C_2 -> C_10 -> C_9 -> C_1 -> C_4 -> C_8 -> C_11 -> C_15 -> C_3 -> C_12 -> C_0 
+Total distance = 2088
+Solution trouvée:
+C_0 -> C_3 -> C_12 -> C_6 -> C_7 -> C_5 -> C_16 -> C_13 -> C_14 -> C_2 -> C_10 -> C_9 -> C_1 -> C_4 -> C_8 -> C_11 -> C_15 -> C_0 
+Total distance = 2085
