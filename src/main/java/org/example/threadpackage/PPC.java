@@ -10,11 +10,26 @@ import org.chocosolver.solver.variables.IntVar;
 import java.io.FileNotFoundException;
 import java.util.List;
 
+/**
+ * Classe implémentant un Solver de TSP en utilisant Choco-solver
+ */
 public class PPC {
 
+
+    /**
+     * Résout le problème du voyageur de commerce (TSP)
+     * L'algorithme minimise la distance totale tout en respectant les connexions définies entre les villes.
+     *
+     * @param C                 Le nombre de villes.
+     * @param D                 La matrice des distances entre les villes.
+     * @param connectionsBlocks La liste des blocs de connexion représentant les routes possibles entre les villes.
+     * @param sharedSolution    L'objet partagé contenant la meilleure solution trouvée.
+     * @return Un modèle Choco-solver représentant le problème TSP.
+     * @throws FileNotFoundException Si une erreur d'accès aux fichiers survient (non utilisé dans l'implémentation actuelle).
+     */
     public static Model SolveTSP(int C, int[][] D, List<CityConnections> connectionsBlocks, SharedSolution sharedSolution) throws FileNotFoundException {
 
-        // A new model instance
+
         Model model = new Model("TSP");
         // VARIABLES
         IntVar[] succ = model.intVarArray("succ", C, 0, C - 1);
@@ -76,17 +91,7 @@ public class PPC {
                 SolutionFound[0]++;
             }
         });
-//        while (solver.solve()) {
-//            int current = 0;
-//            writer.printf("C_%d ", current);
-//            for (int j = 0; j < C; j++) {
-//                writer.printf("-> C_%d ", succ[current].getValue());
-////                System.out.println("-> C_" + succ[current].getValue());
-//                current = succ[current].getValue();
-//            }
-//            writer.printf("\nTotal distance = %d\n", totDist.getValue());
-//            sharedSolution.setBestDistance(totDist.getValue());
-//        }
+
 
         return model;
     }

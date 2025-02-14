@@ -19,12 +19,22 @@ public class SharedSolution {
     SharedSolution() {
     }
 
-
+    /**
+     * Définit la liste des blocs de connexion et notifie les threads en attente.
+     *
+     * @param blocks Liste des blocs de connexion à définir.
+     */
     public synchronized void setConnectionsBlocks(List<CityConnections> blocks) {
         this.connectionsBlocks = blocks;
         notifyAll();
     }
 
+    /**
+     * Retourne la liste des blocs de connexion. Si elle n'est pas encore définie,
+     * la méthode attend qu'une autre thread la définisse.
+     *
+     * @return La liste des blocs de connexion.
+     */
     public synchronized List<CityConnections> getConnectionsBlocks() {
         while (connectionsBlocks == null) {
             try {
@@ -36,6 +46,13 @@ public class SharedSolution {
         return connectionsBlocks;
     }
 
+    /**
+     * Met à jour la meilleure distance trouvée si elle est inférieure à la précédente.
+     * Marque également la distance comme mise à jour et indique qu'une meilleure solution
+     * a été trouvée.
+     *
+     * @param bestDistance Nouvelle meilleure distance trouvée.
+     */
     public synchronized void setBestDistance(double bestDistance) {
         if (bestDistance < this.bestDistance) {
             this.bestDistance = bestDistance;
@@ -44,6 +61,12 @@ public class SharedSolution {
         }
     }
 
+    /**
+     * Retourne la meilleure distance actuellement enregistrée et réinitialise l'indicateur
+     * de mise à jour de la distance.
+     *
+     * @return La meilleure distance trouvée.
+     */
     public synchronized double getBestDistance() {
         this.distanceUpdated = false;
         return bestDistance;
